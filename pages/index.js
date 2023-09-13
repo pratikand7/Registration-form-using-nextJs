@@ -35,7 +35,7 @@ export default function Home() {
       setTouched({});
       setState(initState);
       toast({
-        title: "Message sent.",
+        title: "Registration Complete!.",
         status: "success",
         duration: 2000,
         position: "top",
@@ -100,12 +100,13 @@ export default function Home() {
     </FormControl>
 
     <FormControl isInvalid={touched.message && !values.message} isRequired mb={5}>
-      <FormLabel>Message</FormLabel>
-      <Textarea 
+      <FormLabel>Password</FormLabel>
+      <Input 
+        type="text"
         name="message" 
+        placeholder="Enter your password."
         errorBorderColor="red.300" 
         value={values.message} 
-        rows={4} 
         onChange={handleChange} 
         onBlur={onBlur} />
       <FormErrorMessage>Required</FormErrorMessage>
