@@ -102,7 +102,7 @@ export default function Home() {
     <FormControl isInvalid={touched.message && !values.message} isRequired mb={5}>
       <FormLabel>Password</FormLabel>
       <Input 
-        type="text"
+        type="password"
         name="message" 
         placeholder="Enter your password."
         errorBorderColor="red.300" 
